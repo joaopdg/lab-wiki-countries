@@ -20,6 +20,11 @@ nav{
 
 nav h3{
   color: white;
+  padding-top: 6px;
+  padding-left: 20px;
+}
+
+nav a {
   text-decoration: none;
 }
 
