@@ -16,7 +16,9 @@ function App() {
     axios
       .get(`https://ih-countries-api.herokuapp.com/countries`)
       .then((res) => {
-        setCountries(res.data);
+        setCountries(
+          res.data.sort((a, b) => a.name.common.localeCompare(b.name.common))
+        );
       })
       .catch((err) => console.log(err));
   }, []);
