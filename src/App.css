@@ -1,7 +1,7 @@
-.appBody{
-    display: flex;
-    align-items: center;
-    height: 90vh;
+.appBody {
+  display: flex;
+  align-items: center;
+  height: 90vh;
 }
 
 .cList {
@@ -11,7 +11,7 @@
 }
 
 .myCard {
-  padding: 20px;
+  padding: 20px 0px 20px 0px;
   border: 1px solid gray;
   display: flex;
   flex-direction: column;
@@ -23,4 +23,18 @@
   width: fit-content;
   margin: 0px;
   padding: 0px;
+}
+
+.divider {
+  border-top: 1px solid gray;
+  width: 100%;
+  margin: 10px 0px 10px 0px;
+}
+
+.cRow {
+  display: flex;
+}
+
+.bordersM {
+  margin-right: 10px;
 }
