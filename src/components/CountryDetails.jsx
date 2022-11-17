@@ -18,7 +18,7 @@ function CountryDetails() {
   return (
     <div>
       {oneCountry && (
-        <>
+        <div className='myCard'>
           <img
             src={`https://flagpedia.net/data/flags/icon/72x54/${oneCountry.alpha2Code.toLowerCase()}.png`}
             alt={oneCountry.name.common}
@@ -26,13 +26,13 @@ function CountryDetails() {
           <h2>{oneCountry.name.common}</h2>
           <p>Capital: {oneCountry.capital}</p>
           <p>Area: {oneCountry.area}</p>
-          <ul>
+         
           <p>Borders:</p>
           {oneCountry.borders.map((el) => {
-            return  <p>{el}</p>;
+            return  <Link to={`/${el}`}><p>{el}</p></Link>;
           })}
-          </ul>
-        </>
+  
+        </div>
       )}
     </div>
   );
